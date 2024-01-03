@@ -1,4 +1,4 @@
-export const generatorPages = (totalPages: number) => {
+export const generatorPages = (totalPages: number): number[] => {
 	const pages = Array(totalPages).fill(1);
 
 	for (let i = 1; i < totalPages; i++) {
