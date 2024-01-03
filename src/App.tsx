@@ -1,1 +1,3 @@
-export const App: React.FC = () => <h1>Hello Word</h1>
+import { FC } from "react";
+
+export const App: FC = () => <h1>Hello Word</h1>;
