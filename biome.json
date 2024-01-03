@@ -98,7 +98,6 @@
 				"useAsConstAssertion": "error",
 				"useBlockStatements": "error",
 				"useCollapsedElseIf": "error",
-				"useConsistentArrayType": "error",
 				"useConst": "error",
 				"useDefaultParameterLast": "error",
 				"useFragmentSyntax": "error",
