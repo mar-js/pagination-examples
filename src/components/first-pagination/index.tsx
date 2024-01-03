@@ -6,14 +6,20 @@ export const FirstPagination: FC = () => {
 	const pages = generatorPages(totalPages);
 
 	return (
-		<div>
-			<button type="button">{"<-"}</button>
-			<ul>
+		<div className="first-paginations">
+			<button className="arrow-left" type="button">
+				{"<"}
+			</button>
+			<ul className="pages">
 				{pages.map((page) => (
-					<li key={page}>{page}</li>
+					<li className="page" key={page}>
+						{page}
+					</li>
 				))}
 			</ul>
-			<button type="button">{"->"}</button>
+			<button className="arrow-right" type="button">
+				{">"}
+			</button>
 		</div>
 	);
 };
