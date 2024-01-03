@@ -3,6 +3,7 @@
   --withe: #f0f8ff;
   --blue: #0d4d81;
   --gentleblue: #186db4;
+  --paddingSize: .6rem 4rem;
 }
 
 *,
@@ -21,4 +22,45 @@ html {
 
 body {
   font-size: inherit;
+  padding: 10rem 5rem;
+}
+
+
+/* COMPONENTS */
+.first-paginations {
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+
+  .arrow-left,
+  .arrow-right {
+    cursor: pointer;
+    font-size: inherit;
+    padding: var(--paddingSize);
+    background-color: var(--blue);
+    color: var(--withe);
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+  }
+
+  .pages {
+    width: 100%;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    .page {
+      padding: var(--paddingSize);
+      border: .1rem solid var(--black);
+      border-radius: .5rem;
+
+      &.active {
+        background-color: var(--gentleblue);
+        color: var(--withe);
+      }
+    }
+  }
 }
