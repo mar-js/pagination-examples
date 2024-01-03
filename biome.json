@@ -74,6 +74,9 @@
 				"useIsNan": "error",
 				"useValidForDirection": "error"
 			},
+			"performance": {
+				"noDelete": "error"
+			},
 		}
 	},
 	"formatter": {
