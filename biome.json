@@ -77,6 +77,10 @@
 			"performance": {
 				"noDelete": "error"
 			},
+			"security": {
+				"noDangerouslySetInnerHtml": "error",
+				"noDangerouslySetInnerHtmlWithChildren": "error"
+			},
 		}
 	},
 	"formatter": {
