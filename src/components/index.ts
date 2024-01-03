@@ -1,1 +1,1 @@
-export { FirstPagination } from "./first-pagination";
+export { FirstPaginations } from "./first-paginations";

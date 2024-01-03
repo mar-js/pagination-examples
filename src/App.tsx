@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { FirstPagination } from "./components";
+import { FirstPaginations } from "./components";
 
 export const App: FC = () => (
 	<>
-		<FirstPagination />
+		<FirstPaginations />
 	</>
 );

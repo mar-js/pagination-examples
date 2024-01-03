@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { generatorPages } from "../../utils";
 
-export const FirstPagination: FC = () => {
+export const FirstPaginations: FC = () => {
 	const totalPages = 10;
 	const pages = generatorPages(totalPages);
 
