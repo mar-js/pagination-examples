@@ -1,3 +1,8 @@
 import { FC } from "react";
+import { FirstPagination } from "./components";
 
-export const App: FC = () => <h1>Hello Word</h1>;
+export const App: FC = () => (
+	<>
+		<FirstPagination />
+	</>
+);
