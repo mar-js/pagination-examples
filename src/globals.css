@@ -1,0 +1,24 @@
+:root {
+  --black: #222629;
+  --withe: #f0f8ff;
+  --blue: #0d4d81;
+  --gentleblue: #186db4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  color: var(--black);
+  background-color: var(--withe);
+}
+
+body {
+  font-size: inherit;
+}
