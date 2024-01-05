@@ -7,6 +7,16 @@ export const FirstPaginations: FC = () => {
 
 	const refPages = useRef(null);
 
+	const handleClick = () => {
+		const ul = refPages.current;
+
+		if (!ul) return;
+
+		const firstLi = ul.childNodes[0];
+
+		firstLi.classList.add("active");
+	};
+
 	return (
 		<div className="first-paginations">
 			<button className="arrow-left" type="button">
@@ -19,7 +29,11 @@ export const FirstPaginations: FC = () => {
 					</li>
 				))}
 			</ul>
-			<button className="arrow-right" type="button">
+			<button
+				className="arrow-right"
+				type="button"
+				onClick={handleClick}
+			>
 				{">"}
 			</button>
 		</div>
