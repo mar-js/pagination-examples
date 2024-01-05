@@ -96,7 +96,6 @@
 				"noUselessElse": "error",
 				"noVar": "warn",
 				"useAsConstAssertion": "error",
-				"useBlockStatements": "error",
 				"useCollapsedElseIf": "error",
 				"useConst": "error",
 				"useDefaultParameterLast": "error",
