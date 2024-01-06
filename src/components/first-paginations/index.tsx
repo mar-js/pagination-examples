@@ -9,7 +9,22 @@ export const FirstPaginations: FC = () => {
 
 	const refPages = useRef(null);
 
-	const handleClick = () => {
+	const handleClickLeft = () => {
+		const ul = refPages.current;
+
+		if (!ul) return;
+
+		if (!numberPage) return;
+
+		const firstLi = ul.childNodes[numberPage];
+
+		firstLi.classList.remove("active");
+
+		setNumberPage((prev) => prev && prev - 1);
+		console.log("AA", numberPage);
+	};
+
+	const handleClickRight = () => {
 		const ul = refPages.current;
 
 		if (!ul) return;
@@ -26,7 +41,11 @@ export const FirstPaginations: FC = () => {
 
 	return (
 		<div className="first-paginations">
-			<button className="arrow-left" type="button">
+			<button
+				className="arrow-left"
+				type="button"
+				onClick={handleClickLeft}
+			>
 				{"<"}
 			</button>
 			<ul ref={refPages} className="pages">
@@ -39,7 +58,7 @@ export const FirstPaginations: FC = () => {
 			<button
 				className="arrow-right"
 				type="button"
-				onClick={handleClick}
+				onClick={handleClickRight}
 			>
 				{">"}
 			</button>
