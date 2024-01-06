@@ -1,9 +1,11 @@
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import { generatorPages } from "../../utils";
 
 export const FirstPaginations: FC = () => {
 	const totalPages = 10;
 	const pages = generatorPages(totalPages);
+
+	const [numberPage, setNumberPage] = useState(0);
 
 	const refPages = useRef(null);
 
@@ -12,9 +14,11 @@ export const FirstPaginations: FC = () => {
 
 		if (!ul) return;
 
-		const firstLi = ul.childNodes[0];
+		const firstLi = ul.childNodes[numberPage];
 
 		firstLi.classList.add("active");
+
+		setNumberPage((prev) => prev + 1);
 	};
 
 	return (
