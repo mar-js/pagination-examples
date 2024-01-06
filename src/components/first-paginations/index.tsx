@@ -14,11 +14,14 @@ export const FirstPaginations: FC = () => {
 
 		if (!ul) return;
 
+		if (totalPages === numberPage) return;
+
 		const firstLi = ul.childNodes[numberPage];
 
 		firstLi.classList.add("active");
 
 		setNumberPage((prev) => prev + 1);
+		console.log("AA", numberPage);
 	};
 
 	return (
