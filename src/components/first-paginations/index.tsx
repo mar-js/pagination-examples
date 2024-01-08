@@ -1,11 +1,9 @@
-import { FC, useRef, useState } from "react";
+import { FC, useRef } from "react";
 import { generatorPages } from "../../utils";
 
 export const FirstPaginations: FC = () => {
 	const totalPages = 10;
 	const pages = generatorPages(totalPages);
-
-	const [numberPage, setNumberPage] = useState(0);
 
 	const refPages = useRef(null);
 
