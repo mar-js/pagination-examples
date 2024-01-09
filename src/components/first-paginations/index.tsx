@@ -2,10 +2,13 @@ import { FC, useRef } from "react";
 import { generatorPages } from "../../utils";
 
 export const FirstPaginations: FC = () => {
+	const refPages = useRef(null);
+
 	const totalPages = 10;
 	const pages = generatorPages(totalPages);
 
-	const refPages = useRef(null);
+	const ulElement = refPages.current;
+	const liElements = ulElement?.children;
 
 	return (
 		<div className="first-paginations">
