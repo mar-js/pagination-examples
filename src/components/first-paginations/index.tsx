@@ -4,6 +4,7 @@ import { generatorPages } from "../../utils";
 export const FirstPaginations: FC = () => {
 	const refPages = useRef(null);
 
+	let numberPage = 0;
 	const totalPages = 10;
 	const pages = generatorPages(totalPages);
 
