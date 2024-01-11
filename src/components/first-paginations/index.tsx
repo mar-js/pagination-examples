@@ -44,7 +44,10 @@ export const FirstPaginations: FC = () => {
 			</button>
 			<ul ref={refPages} className="pages">
 				{pages.map((page) => (
-					<li className="page" key={page}>
+					<li
+						className={`${page === 1 ? "page active" : "page"}`}
+						key={page}
+					>
 						{page}
 					</li>
 				))}
