@@ -11,6 +11,24 @@ export const FirstPaginations: FC = () => {
 	const ulElement = refPages.current;
 	const liElements = ulElement?.children;
 
+	const handleClick = (
+		e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
+	) => {
+		const btn = e.target as HTMLButtonElement;
+
+		if (btn.name === "btn-right") {
+			if (numberPage === totalPages - 1) return;
+
+			numberPage += 1;
+			liElements[numberPage].classList.add("active");
+		} else {
+			if (numberPage === 0) return;
+
+			liElements[numberPage].classList.remove("active");
+			numberPage -= 1;
+		}
+	};
+
 	return (
 		<div className="first-paginations">
 			<button className="arrow-left" type="button">
