@@ -35,7 +35,11 @@ export const FirstPaginations: FC = () => {
 
 	return (
 		<div className="first-paginations">
-			<button className="arrow-left" type="button">
+			<button
+				className="arrow-left"
+				type="button"
+				onClick={handleClick}
+			>
 				{"<"}
 			</button>
 			<ul ref={refPages} className="pages">
@@ -45,7 +49,12 @@ export const FirstPaginations: FC = () => {
 					</li>
 				))}
 			</ul>
-			<button className="arrow-right" type="button" name="btn-right">
+			<button
+				className="arrow-right"
+				type="button"
+				name="btn-right"
+				onClick={handleClick}
+			>
 				{">"}
 			</button>
 		</div>
