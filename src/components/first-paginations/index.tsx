@@ -23,7 +23,7 @@ export const FirstPaginations: FC = () => {
 					</li>
 				))}
 			</ul>
-			<button className="arrow-right" type="button">
+			<button className="arrow-right" type="button" name="btn-right">
 				{">"}
 			</button>
 		</div>
