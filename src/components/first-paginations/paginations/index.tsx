@@ -1,7 +1,13 @@
 import { FC, MouseEvent, useRef } from "react";
 import { generatorPages } from "../../../utils";
 
-export const Paginations: FC = ({ totalPages }) => {
+interface InterfacePaginations {
+	totalPages: number;
+}
+
+export const Paginations: FC<InterfacePaginations> = ({
+	totalPages,
+}) => {
 	const refPages = useRef<HTMLUListElement | null>(null);
 
 	let numberPage = 0;
