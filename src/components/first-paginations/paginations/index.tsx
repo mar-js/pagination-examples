@@ -3,14 +3,15 @@ import { generatorPages } from "../../../utils";
 
 interface InterfacePaginations {
 	totalPages: number;
+	numberPage: number;
 }
 
 export const Paginations: FC<InterfacePaginations> = ({
 	totalPages,
+	numberPage,
 }) => {
 	const refPages = useRef<HTMLUListElement | null>(null);
 
-	let numberPage = 0;
 	const pages = generatorPages(totalPages);
 
 	const ulElement = refPages.current;
