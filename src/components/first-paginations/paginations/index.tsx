@@ -1,11 +1,10 @@
 import { FC, MouseEvent, useRef } from "react";
 import { generatorPages } from "../../../utils";
 
-export const Paginations: FC = () => {
+export const Paginations: FC = ({ totalPages }) => {
 	const refPages = useRef<HTMLUListElement | null>(null);
 
 	let numberPage = 0;
-	const totalPages = 10;
 	const pages = generatorPages(totalPages);
 
 	const ulElement = refPages.current;
