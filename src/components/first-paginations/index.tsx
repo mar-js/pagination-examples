@@ -16,6 +16,10 @@ export const FirstPaginations: FC = () => {
 	) => {
 		const btn = e.target as HTMLButtonElement;
 
+		if (!liElements) return;
+
+		if (typeof liElements[numberPage] === "undefined") return;
+
 		if (btn.name === "btn-right") {
 			if (numberPage === totalPages - 1) return;
 
