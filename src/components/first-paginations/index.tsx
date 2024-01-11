@@ -2,7 +2,7 @@ import { FC, useRef } from "react";
 import { generatorPages } from "../../utils";
 
 export const FirstPaginations: FC = () => {
-	const refPages = useRef(null);
+	const refPages = useRef<HTMLUListElement | null>(null);
 
 	let numberPage = 0;
 	const totalPages = 10;
