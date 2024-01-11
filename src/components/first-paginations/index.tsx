@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC, MouseEvent, useRef } from "react";
 import { generatorPages } from "../../utils";
 
 export const FirstPaginations: FC = () => {
