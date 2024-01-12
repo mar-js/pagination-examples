@@ -1,10 +1,12 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import { PaginationsModel } from "../contexts";
 
-export const PaginationsProvider: FC = () => {
+export const PaginationsProvider: FC<PropsWithChildren> = ({
+	children,
+}) => {
 	return (
 		<PaginationsModel.Provider value="">
-			asd
+			{children}
 		</PaginationsModel.Provider>
 	);
 };
