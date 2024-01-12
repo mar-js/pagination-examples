@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { createContext } from "react";
 
-const paginationsModel = useContext({});
-export const usePaginationsContext = () => paginationsModel;
+const PaginationsModel = createContext({});
+export const usePaginationsContext = () => PaginationsModel;
