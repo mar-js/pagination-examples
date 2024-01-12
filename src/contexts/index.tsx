@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 interface InterfacePaginationsModel {
 	firstPaginations: {
@@ -10,4 +10,5 @@ interface InterfacePaginationsModel {
 export const PaginationsModel = createContext(
 	{} as InterfacePaginationsModel,
 );
-export const usePaginationsContext = () => PaginationsModel;
+export const usePaginationsContext = () =>
+	useContext(PaginationsModel);
