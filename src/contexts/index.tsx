@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 
-interface InterfacePaginationsModel {
+export interface InterfacePaginationsModel {
 	firstPaginations: {
 		totalPages: number;
 		numberPage: number;
