@@ -1,9 +1,13 @@
-import { createContext, useContext } from "react";
+import { MouseEvent, createContext, useContext } from "react";
 
 export interface InterfacePaginationsModel {
 	firstPaginations: {
 		totalPages: number;
 		numberPage: number;
+		handleClick: (
+			e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
+			liElements: HTMLCollection | undefined,
+		) => void;
 	};
 }
 
