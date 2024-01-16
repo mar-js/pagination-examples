@@ -7,7 +7,7 @@ export const FirstPaginations: FC = () => {
 
 	return (
 		<section>
-			'AAA'
+			{firstPaginations.numberPage}
 			<Paginations {...firstPaginations} />
 		</section>
 	);
