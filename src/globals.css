@@ -27,39 +27,45 @@ body {
 
 
 /* COMPONENTS */
-.first-paginations {
-  display: flex;
-  align-items: center;
-  font-size: 5rem;
+.first-paginations-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
 
-  .arrow-left,
-  .arrow-right {
-    cursor: pointer;
-    font-size: inherit;
-    padding: var(--paddingSize);
-    background-color: var(--blue);
-    color: var(--withe);
-    border: none;
-    border-radius: .5rem;
-    outline: none;
-  }
-
-  .pages {
-    width: 100%;
-    margin: 0 2rem;
+  .first-paginations {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    list-style: none;
+    font-size: 5rem;
 
-    .page {
+    .arrow-left,
+    .arrow-right {
+      cursor: pointer;
+      font-size: inherit;
       padding: var(--paddingSize);
-      border: .1rem solid var(--black);
+      background-color: var(--blue);
+      color: var(--withe);
+      border: none;
       border-radius: .5rem;
+      outline: none;
+    }
 
-      &.active {
-        background-color: var(--gentleblue);
-        color: var(--withe);
+    .pages {
+      width: 100%;
+      margin: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+
+      .page {
+        padding: var(--paddingSize);
+        border: .1rem solid var(--black);
+        border-radius: .5rem;
+
+        &.active {
+          background-color: var(--gentleblue);
+          color: var(--withe);
+        }
       }
     }
   }
