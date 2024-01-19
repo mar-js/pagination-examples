@@ -7,7 +7,7 @@ export const FirstPaginations: FC = () => {
 	const { firstPaginations } = usePaginationsContext();
 
 	return (
-		<section>
+		<section className="first-paginations-container">
 			<Title>{firstPaginations.numberPage}</Title>
 			<Paginations {...firstPaginations} />
 		</section>
