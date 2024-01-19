@@ -32,6 +32,12 @@ body {
   height: auto;
   text-align: center;
 
+
+  .title {
+    font-size: 10rem;
+    font-weight: 400;
+  }
+
   .first-paginations {
     display: flex;
     align-items: center;
